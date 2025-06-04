@@ -3,13 +3,14 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: latest
+      python: 3.8  # Not really used here
     commands:
-      - echo Installing dependencies...
+      - echo "Nothing to install"
   build:
     commands:
-      - echo Build completed successfully.
-
+      - echo "No build step needed"
 artifacts:
   files:
-    - '**/*'
+    - index.html
+    - appspec.yml
+    - scripts/**/* 

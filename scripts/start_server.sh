@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /home/ec2-user/app
-sudo nohup python3 app.py > output.log 2>&1 &
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo cp /home/ec2-user/index.html /var/www/html/index.html
