@@ -3,15 +3,13 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.8
+      python: latest
     commands:
       - echo Installing dependencies...
   build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed successfully.
+
 artifacts:
   files:
-    - app.py
-    - appspec.yml
-    - scripts/*
-buildspec.yml
+    - '**/*'
